@@ -26,4 +26,4 @@ then
 break
 fi
 done
-echo $salary
+echo "total wages are "$salary

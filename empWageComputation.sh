@@ -1,7 +1,4 @@
 echo "Welcome to Employee Wage Computation Program"
-wagePerHour=20
-totalWage=0
-salary=0
 function func() {
 case $1 in
 0)
@@ -16,9 +13,7 @@ echo $workingHour
 for ((count=1;count<=20;count++))
 do
 x=$(func $((RANDOM%3)))
-totalWage=$(($wagePerHour+$x))
-echo $totalWage
-salary=$(($salary+$totalWage))
+echo $x
 hour=$(($hour + $x))
 if [ $hour -gt 99 ]
 then

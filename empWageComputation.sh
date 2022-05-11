@@ -1,6 +1,5 @@
 echo "Welcome to Employee Wage Computation Program"
 
-
 wagePerHour=20
 totalWage=0
 salary=0
@@ -19,9 +18,9 @@ for ((count=1;count<=20;count++))
 do
 x=$(func $((RANDOM%3)))
 totalWage=$(($wagePerHour*$x))
-echo -n $totalWage " "
+echo -n $count " "
+echo $totalWage " "
 salary=$(($salary+$totalWage))
-
 hour=$(($hour + $x))
 if [ $hour -gt 99 ]
 then
@@ -29,4 +28,5 @@ break
 fi
 done
 echo "total wages are "$salary
+
 

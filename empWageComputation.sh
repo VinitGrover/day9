@@ -1,8 +1,13 @@
 echo "Welcome to Employee Wage Computation Program"
 
-wagePerHour=20
 for ((count=1;count<=30;count++))
 do
-echo  "daily wage is " $(($wagePerHour*8))
+x=$((RANDOM%2))
+if [ $x == 0 ]
+then
+echo $((4*20))
+else
+echo $((8*20))
+fi
 done
 

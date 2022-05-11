@@ -1,4 +1,5 @@
 echo "Welcome to Employee Wage Computation Program"
+
 function func() {
 case $1 in
 0)
@@ -20,3 +21,5 @@ then
 break
 fi
 done
+
+

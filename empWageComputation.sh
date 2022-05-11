@@ -1,11 +1,8 @@
 echo "Welcome to Employee Wage Computation Program"
 
-x=$((RANDOM%2))
-
-case $x in
-0)
-echo "employee is absent" ;;
-1)
-echo "employee is present" ;;
-esac
+wagePerHour=20
+for ((count=1;count<=30;count++))
+do
+echo  "daily wage is " $(($wagePerHour*8))
+done
 

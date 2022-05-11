@@ -28,3 +28,5 @@ break
 fi
 done
 echo "total wages are "$salary
+
+
